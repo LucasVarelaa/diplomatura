@@ -1,3 +1,6 @@
 galletitas
 pan
 queso
+lechuga
+papas
+tomates
