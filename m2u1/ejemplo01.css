@@ -1,0 +1,21 @@
+.caja{
+    margin: 100px;
+    width: 300px;
+    height: 300px;
+    /* background-color: #632DCE; */
+    /* DEGRADE DEL FONDO DE LA CAJA  https://cssgradient.io/  */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 16%, 
+    rgba(9,9,121,1) 39%, rgba(7,49,147,1) 51%, rgba(6,79,167,1) 
+    65%, rgba(5,98,180,1) 76%, rgba(0,212,255,1) 100%);
+    color: pink;
+    padding: 30px;
+
+    /*SOMBRAS https://cssgradient.io/ */
+    box-shadow: 50px 40px 30px black;
+    /* positivo abajo derecha  x   y   desenfoque   color */
+
+    /* BORDES REDONDEADO */
+    /* border-radius: 10px; */
+    border-top-left-radius: 20px;
+    border-radius: 10px 20px 30px 40px;
+}

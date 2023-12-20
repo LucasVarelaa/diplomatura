@@ -39,3 +39,31 @@ p{
     color: blueviolet;
     font-weight: bold;
 }
+
+/* pixel es la unidad mininma de resolucion de la pantalla*/
+
+/* 1rem = 16px si no difinimos font-size 
+O 
+:root{
+    font-size: 30px; (se toma como 1 rem)
+}
+*/
+
+/* em es el tamaño base de referencia mas cercano*/
+
+/*
+p{
+    font-size: 20px;
+}
+
+p{
+    font-size: 1.5rem (24px);
+}
+
+p{
+    font-size: 2em (40px);
+}
+*/
+
+/* si queres que sea todo proporcional se usa rem */
+/* si queres que sea proporcional por sectores se usa em */

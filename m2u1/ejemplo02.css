@@ -1,0 +1,20 @@
+.texto{
+    background-color: green;
+    /* COLUMNAS */
+    column-count: 3;
+    column-gap: 60px;
+    column-rule: 2px solid black; /* linea de separacion*/
+}
+
+.texto .sinmargen{
+    margin-top: 0;
+}
+
+h2{
+    color: red;
+    font-family: 'Inter', sans-serif;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
