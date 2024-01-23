@@ -1,0 +1,17 @@
+.contenedor{
+	background-color: blue;
+	display: inline-flex;
+	flex-direction: row;/*defecto*/
+	flex-direction: row-reverse; /*invertir fila*/
+	flex-direction: column;/* de fila a columna */
+	flex-direction: column-reverse; /* invertir col*/
+
+}
+
+.item{
+	background-color: #ccc;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	font-size: 30px;
+		}
