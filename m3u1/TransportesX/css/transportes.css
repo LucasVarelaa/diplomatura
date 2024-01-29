@@ -1,0 +1,187 @@
+/* Configuración de la fuente */
+/*font-family: 'Open Sans', sans-serif;  Define la fuente utilizada en el documento */
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Define la fuente utilizada en el cuerpo del documento */
+    font-size: 16px; /* Tamaño de la fuente */
+    line-height: 20px; /* Altura de línea */
+}
+
+header {
+    background-color: blue; /* Color de fondo del encabezado */
+    padding: 16px; /* Espaciado interno del encabezado */
+}
+
+header h1 {
+    color: white; /* Color del texto */
+    font-size: 40px; /* Tamaño de la fuente */
+    font-weight: 100px; /* Grosor de la fuente */
+    font-style: italic; /* Estilo de la fuente */
+    display: inline-block; /* Muestra el elemento como un bloque en línea */
+    position: relative; /* Define el posicionamiento relativo */
+    bottom: 35px; /* Posición vertical con respecto al contenedor padre */
+    margin-left: 10px; /* Margen izquierdo */
+}
+
+nav {
+    background-color: cornflowerblue; /* Color de fondo de la barra de navegación */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+nav ul {
+    list-style: none; /* Estilo de la lista */
+    margin: 0; /* Margen externo */
+    padding: 0; /* Relleno interno */
+    display: flex; /* Display flexible */
+}
+
+nav ul li {
+    flex-grow: 1; /* Factor de crecimiento flexible */
+}
+
+nav ul li a {
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Decoración del texto del enlace */
+    padding: 3px 6px; /* Relleno del enlace */
+    display: block; /* Muestra el enlace como un bloque */
+    text-align: center; /* Alineación del texto */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* Color de fondo al pasar el mouse sobre el enlace */
+}
+
+footer {
+    background-color: #ccc; /* Color de fondo del pie de página */
+    clear: both; /* Borrar flotantes */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 50px 0; /* Relleno del pie de página */
+    margin-top: 20px; /* Margen superior */
+}
+
+nav ul li a.activo {
+    background-color: #4c76a5; /* Color de fondo del enlace activo */
+}
+
+.holder {
+    max-width: 960px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Margen automático */
+}
+
+h2 {
+    color: #2e64a1; /* Color del texto */
+    font-weight: 400; /* Grosor de la fuente */
+}
+
+/* Estilos de la sección de inicio */
+.columnas {
+    display: flex; /* Display flexible para las columnas */
+    justify-content: space-between; /* Distribución del espacio entre elementos */
+}
+
+.bienvenidos {
+    width: 75%; /* Ancho de la sección de bienvenida */
+    padding-right: 10px; /* Relleno derecho */
+    box-sizing: border-box; /* Modelo de caja */
+}
+
+.testimonios {
+    width: 25%; /* Ancho de la sección de testimonios */
+}
+
+.bienvenidos p {
+    font-size: 20px; /* Tamaño de la fuente del párrafo */
+}
+
+.testimonio {
+    background-color: gray; /* Color de fondo del testimonio */
+    padding: 16px; /* Espaciado interno */
+}
+
+.testimonio .cita {
+    font-weight: bold; /* Grosor de la fuente */
+    font-style: italic; /* Estilo de la fuente */
+    font-size: 22px; /* Tamaño de la fuente */
+    display: block; /* Muestra el elemento como bloque */
+}
+
+.testimonio .autor {
+    font-size: 10px; /* Tamaño de la fuente del autor */
+    text-align: center; /* Alineación del texto */
+    display: block; /* Muestra el elemento como bloque */
+    margin: 12px 0; /* Margen superior e inferior */
+}
+
+/* Fin de estilos de la sección de inicio */
+
+/* Estilos de la sección Nosotros */
+
+.historia p {
+    font-size: 12px; /* Tamaño de la fuente del párrafo de la historia */
+}
+
+.persona {
+    border: 1px solid cornflowerblue; /* Borde del elemento */
+    border-radius: 5px; /* Radio de borde */
+    width: 18%; /* Ancho del elemento */
+    text-align: center; /* Alineación del texto */
+    padding: 13px; /* Relleno del elemento */
+    box-sizing: border-box; /* Modelo de caja */
+}
+
+.personas {
+    display: flex; /* Display flexible para las personas */
+    justify-content: space-between; /* Distribución del espacio entre elementos */
+}
+
+.persona img {
+    border-radius: 50%; /* Radio de borde para la imagen */
+    max-width: 60%; /* Ancho máximo de la imagen */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
+}
+
+.persona h5, .persona h6 {
+    margin: 0; /* Margen del elemento */
+    font-weight: normal; /* Grosor de la fuente */
+    color: purple; /* Color del texto */
+}
+
+.persona p {
+    color: #666; /* Color del texto */
+    font-size: 10px; /* Tamaño de la fuente del párrafo */
+}
+
+/* Fin de estilos de la sección Nosotros */
+
+/* Estilos de la sección Servicios */
+
+.servicio {
+    border: 1px solid #ccc; /* Borde del servicio */
+    border-radius: 10px; /* Radio de borde */
+    padding: 16px; /* Relleno del servicio */
+    margin: 16px 0; /* Margen del servicio */
+    display: flex; /* Display flexible para alinear elementos */
+    gap: 32px; /* Espacio entre elementos */
+    align-items: center; /* Alineación de elementos */
+}
+
+.servicio .info h4 {
+    color: #333; /* Color del título */
+    font-weight: 500; /* Grosor de la fuente */
+    font-style: italic; /* Estilo de la fuente */
+    border-bottom: 1px solid #2e64a1; /* Borde inferior */
+    padding-bottom: 10px; /* Relleno inferior */
+}
+
+.servicio img {
+    border-radius: 13px; /* Establece un borde redondeado para la imagen */
+    display: block; /* Hace que la imagen se muestre como un bloque */
+    max-width: 225px; /* Limita el ancho máximo de la imagen a 225px para reducir su tamaño */
+}
+
+.servicio:nth-child(even) {
+    flex-direction: row-reverse; /* Invierte la dirección de la disposición en fila de los servicios alternos */
+}
+
+/* Fin de servicios */
