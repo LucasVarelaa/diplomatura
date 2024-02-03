@@ -1,26 +1,38 @@
 /* Configuración de la fuente */
 /*font-family: 'Open Sans', sans-serif;  Define la fuente utilizada en el documento */
 
-
-
+h1 {
+    top: -13px;
+}
 
 .fixed-header, .fixed-nav {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000; /* Asegura que ambos elementos estén por encima de otros elementos */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para resaltar los elementos */
-   /* border-bottom: 20px;*/
 }
 
 .fixed-nav {
     top: 60px; /* Ajusta según la altura de tu encabezado para evitar que la barra de navegación se superponga al encabezado */
-    /*border-top: 30px;*/
+    border-top: 30px;
 }
 
+.fixed-header header h1 {
+    margin-top: 20px; /* Aplicar un margen superior negativo al título */
+}
 
+p {
+    text-align: justify; /* Justificar el texto */
+    font-size: 18px;
+    line-height: 1.6; /* Ajusta este valor según el espaciado deseado entre líneas */
+    
+}
 
-
+h2 {
+    color: #2e64a1; /* Color del texto */
+    font-weight: 400; /* Grosor de la fuente */
+}
 
 body {
     font-family: 'Open Sans', sans-serif; /* Define la fuente utilizada en el cuerpo del documento */
@@ -32,13 +44,13 @@ header {
     background-color: rgb(255, 255, 255); /* Color de fondo del encabezado */
     padding: 10px; /* Espaciado interno del encabezado */
     text-align: center;
-    margin-top: 30px;
     margin-bottom: -30px;
+    
 }
 
 header h1 {
     color: rgb(0, 0, 0); /* Color del texto */
-    font-size: 40px; /* Tamaño de la fuente */
+    font-size: 45px; /* Tamaño de la fuente */
     font-weight: 100px; /* Grosor de la fuente */
     font-style: italic; /* Estilo de la fuente */
     display: inline-block; /* Muestra el elemento como un bloque en línea */
@@ -96,6 +108,16 @@ footer .ayuda {
     width: 40%;
 }
 
+.h2 {
+    color: #ffffff; /* Color del texto */
+}
+
+.enlace-personalizado {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: white; /* Establece el color del texto del enlace */
+}
+
+
 footer .col ul {
     list-style-type: none; /* Elimina los puntos de la lista */
     padding: 0; /* Elimina el relleno predeterminado de la lista */
@@ -134,6 +156,9 @@ footer p {
     font-style: italic;
 }
 
+.contenido {
+    margin-top: 300px; /* Ajusta según la altura del encabezado */
+}
 
 nav ul li a.activo {
     background-color: #4c76a5; /* Color de fondo del enlace activo */
@@ -143,12 +168,6 @@ nav ul li a.activo {
     max-width: 90%; /* Ancho máximo del contenedor */
     margin: 0 auto; /* Margen automático */
 }
-
-h2 {
-    color: #2e64a1; /* Color del texto */
-    font-weight: 400; /* Grosor de la fuente */
-}
-
 
 span {
     color: burlywood;
@@ -170,31 +189,27 @@ span {
     box-sizing: border-box; /* Modelo de caja */
 }
 
-.testimonios {
+.dias {
     width: 25%; /* Ancho de la sección de testimonios */
+}
+
+.dias img{
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
 }
 
 .bienvenidos p {
     font-size: 20px; /* Tamaño de la fuente del párrafo */
 }
 
-.testimonio {
-    background-color: gray; /* Color de fondo del testimonio */
-    padding: 16px; /* Espaciado interno */
-}
-
-.testimonio .cita {
-    font-weight: bold; /* Grosor de la fuente */
-    font-style: italic; /* Estilo de la fuente */
-    font-size: 22px; /* Tamaño de la fuente */
-    display: block; /* Muestra el elemento como bloque */
-}
-
-.testimonio .autor {
-    font-size: 10px; /* Tamaño de la fuente del autor */
-    text-align: center; /* Alineación del texto */
-    display: block; /* Muestra el elemento como bloque */
-    margin: 12px 0; /* Margen superior e inferior */
+.inicio{
+    width: 95%; /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 300px; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    display: block; /* Asegura que la imagen sea tratada como un bloque */
+    margin-left: auto; /* Establece el margen izquierdo automático */
+    margin-right: auto; /* Establece el margen derecho automático */
 }
 
 /* Fin de estilos de la sección de inicio */
@@ -202,7 +217,7 @@ span {
 /* Estilos de la sección Nosotros */
 
 .historia p {
-    font-size: 12px; /* Tamaño de la fuente del párrafo de la historia */
+    font-size: 18px; /* Tamaño de la fuente del párrafo de la historia */
 }
 
 .persona {
@@ -221,6 +236,8 @@ span {
 }
 
 .persona img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%; /* Radio de borde para la imagen */
     max-width: 60%; /* Ancho máximo de la imagen */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
@@ -232,14 +249,16 @@ span {
     color: purple; /* Color del texto */
 }
 
-.persona p {
+.persona ul {
     color: #666; /* Color del texto */
-    font-size: 10px; /* Tamaño de la fuente del párrafo */
+    font-size:large; /* Tamaño de la fuente del párrafo */
+    text-align: start;
+    line-height: 1.6;
 }
 
 /* Fin de estilos de la sección Nosotros */
 
-/* Estilos de la sección Servicios */
+/* Estilos de la sección Productos */
 
 .servicio {
     border: 1px solid #ccc; /* Borde del servicio */
@@ -257,10 +276,12 @@ span {
     font-style: italic; /* Estilo de la fuente */
     border-bottom: 1px solid #2e64a1; /* Borde inferior */
     padding-bottom: 10px; /* Relleno inferior */
+    font-size: 40px;
 }
 
 .servicio img {
-    border-radius: 13px; /* Establece un borde redondeado para la imagen */
+    width: 300px;
+    border-radius: 15px; /* Establece un borde redondeado para la imagen */
     display: block; /* Hace que la imagen se muestre como un bloque */
     max-width: 225px; /* Limita el ancho máximo de la imagen a 225px para reducir su tamaño */
 }
@@ -269,7 +290,7 @@ span {
     flex-direction: row-reverse; /* Invierte la dirección de la disposición en fila de los servicios alternos */
 }
 
-/* Fin de servicios */
+/* Fin de Productos */
 
 /* Inicio Galeria */
 
@@ -290,6 +311,37 @@ span {
 
 /* Fin galeria */
 
+/* Inicio de Novedades */
+
+.novedades img {
+    display: block; /* Asegura que la imagen sea tratada como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    max-width: 50%; /* Establece que la imagen ocupe el 50% del ancho del contenedor */
+    border: 3px solid #3b3535; /* Agrega un borde sólido */
+    padding: 0.3em; /* Agrega un relleno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+}
+
+.animacion {
+    animation-name: Aparecer;
+    animation-duration: 4s;
+}
+
+@keyframes Aparecer {
+    0% {
+        opacity: 0; /* La imagen está completamente transparente al inicio */
+    }
+    100% {
+        opacity: 1; /* La imagen es completamente visible al final */
+    }
+}
+
+.novedades p {
+    font-size: 20px;
+}
+
+/* Fin de Novedades */
+
 /* Inicio de Contacto */
 
 .contacto {
@@ -298,16 +350,17 @@ span {
 }
 
 .contacto div {
-    width: 100%;
+    width: 100%; 
 }
 
 .datos p {
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .datos ul li {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 .formulario p {
