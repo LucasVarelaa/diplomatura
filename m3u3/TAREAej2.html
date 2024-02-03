@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const x = [];
+        for(let i = 0; i < 10; i++)
+        {
+            const valor = prompt(`Ingrese el elemento ${i + 1}:`)
+            x.push(valor);
+        }
+        console.log(x); // Solo para verificar el contenido del array
+
+        let mayor = x[0]; /* Uso let porque el valor se va a ir modificando a lo largo del codigo Lucas del futuro */
+
+        for(let j = 0; j < 10; j++)
+        {
+            if(mayor < x[j])
+            {
+                mayor = x[j];
+            }
+        }
+
+        document.write(`El mayor elemento es ${mayor}`);
+
+    </script>
+</body>
+
+</html>
