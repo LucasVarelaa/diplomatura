@@ -1,26 +1,40 @@
 /* Configuración de la fuente */
 /*font-family: 'Open Sans', sans-serif;  Define la fuente utilizada en el documento */
+/* font-family: 'Sixtyfour', sans-serif; */
+/* font-family: 'Stint Ultra Condensed', serif; */
+
+/*font-family: 'Akaya Telivigala', system-ui;
+font-family: 'East Sea Dokdo', sans-serif;
+font-family: 'Meow Script', cursive;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Qwitcher Grypen', cursive;
+*/
 
 h1 {
     top: -13px;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 70px;
 }
 
+/*
 .fixed-header, .fixed-nav {
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Asegura que ambos elementos estén por encima de otros elementos */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para resaltar los elementos */
+    z-index: 1000; /* Asegura que ambos elementos estén por encima de otros elementos 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para resaltar los elementos 
 }
 
 .fixed-nav {
-    top: 60px; /* Ajusta según la altura de tu encabezado para evitar que la barra de navegación se superponga al encabezado */
+    top: 60px; /* Ajusta según la altura de tu encabezado para evitar que la barra de navegación se superponga al encabezado *
     border-top: 30px;
 }
 
 .fixed-header header h1 {
-    margin-top: 20px; /* Aplicar un margen superior negativo al título */
+    margin-top: 20px; /* Aplicar un margen superior negativo al título 
 }
+*/
+
 
 p {
     text-align: justify; /* Justificar el texto */
@@ -174,6 +188,10 @@ span {
     font-style: none;
 }
 
+.titulo {
+    font-size: 70px;
+    font-style: bold;
+}
 
 /* Estilos de la sección de inicio */
 
@@ -260,17 +278,17 @@ span {
 
 /* Estilos de la sección Productos */
 
-.servicio {
-    border: 1px solid #ccc; /* Borde del servicio */
+.producto {
+    border: 1px solid #ccc; /* Borde del producto */
     border-radius: 10px; /* Radio de borde */
-    padding: 16px; /* Relleno del servicio */
-    margin: 16px 0; /* Margen del servicio */
+    padding: 16px; /* Relleno del producto */
+    margin: 16px 0; /* Margen del producto */
     display: flex; /* Display flexible para alinear elementos */
     gap: 32px; /* Espacio entre elementos */
     align-items: center; /* Alineación de elementos */
 }
 
-.servicio .info h4 {
+.producto .info h4 {
     color: #333; /* Color del título */
     font-weight: 500; /* Grosor de la fuente */
     font-style: italic; /* Estilo de la fuente */
@@ -279,15 +297,15 @@ span {
     font-size: 40px;
 }
 
-.servicio img {
+.producto img {
     width: 300px;
     border-radius: 15px; /* Establece un borde redondeado para la imagen */
     display: block; /* Hace que la imagen se muestre como un bloque */
     max-width: 225px; /* Limita el ancho máximo de la imagen a 225px para reducir su tamaño */
 }
 
-.servicio:nth-child(even) {
-    flex-direction: row-reverse; /* Invierte la dirección de la disposición en fila de los servicios alternos */
+.producto:nth-child(even) {
+    flex-direction: row-reverse; /* Invierte la dirección de la disposición en fila de los producto alternos */
 }
 
 /* Fin de Productos */
