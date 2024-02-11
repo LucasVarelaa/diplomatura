@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        // Creamos un array de números del 1 al 10
+        const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        // Usamos el método filter() en el array 'numeros'
+        // filter() toma una función de callback como argumento
+        // Esta función se ejecuta una vez por cada elemento del array 'numeros'
+        // La función debe retornar true si queremos incluir el elemento en el nuevo array, o false si no
+        // En este caso, usamos una función de flecha (arrow function) para verificar si el número es par
+        
+        const pares = numeros.filter(num => num % 2 === 0);
+
+        // Imprimimos el nuevo array con solo los números pares en la consola
+        console.log(pares); // [2, 4, 6, 8, 10]
+
+        // El método filter() crea un nuevo array con todos los elementos que 
+        // cumplen la condición implementada por la función dada.
+
+    </script>
+
+
+
+</body>
+
+</html>

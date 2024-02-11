@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+</head>
+
+<body>
+	<script>
+		// Definimos una función llamada "getNameDiasForMes" que toma un parámetro "mes" y devuelve un objeto con el nombre del mes y la cantidad de días.
+		function getNameDiasForMes(mes) {
+			// Comprobamos si el valor de "mes" no es un número.
+			if (Number.isNaN(mes)) return false; //si devuelve true significa que Not a number, por lo tanto nosotros retornamos false
+
+			// Comprobamos si "mes" está fuera del rango válido (1 a 12).
+			if (mes < 1 || mes > 12) return false;
+
+			// Restamos 1 a "mes" para que esté en el rango de índices del array "data".
+			mes--;
+
+			// Definimos un array de objetos donde cada objeto representa un mes del año y su cantidad de días.
+			const data = [
+				{
+					nombre: 'Enero',
+					dias: 31,
+				}, {
+					nombre: 'Febrero',
+					dias: 28,
+				} // Aquí puedes agregar más objetos para los otros meses del año si lo deseas.
+			]
+
+			// Retornamos el objeto correspondiente al mes indicado por el parámetro "mes".
+			return data[mes];
+
+			/*
+			function getNameDiasForMes(mes) {
+	if (!Number.isNaN(mes)) {
+		if (mes >= 1 && mes <= 12) {
+			mes--;
+			const data = [
+				{
+					nombre: 'Enero',
+					dias: 31,
+				},
+				{
+					nombre: 'Febrero',
+					dias: 28,
+				},
+				// Aquí podrías agregar más objetos para los otros meses del año si lo deseas.
+			];
+			return data[mes];
+		}
+	}
+	return false;
+}
+			*/
+		}
+
+		// Solicitamos al usuario que ingrese un número de mes y lo convertimos a entero.
+		const numMes = parseInt(prompt('Ingrese el número del mes (1 al 12):', ''));
+		//parseInt(): Esta función toma una cadena de texto que representa un número y devuelve ese número como un entero. Por ejemplo:
+		//prompt(): Esta función muestra un cuadro de diálogo modal que solicita al usuario que ingrese información. La función devuelve el texto ingresado por el usuario como una cadena de texto. 
+		// Llamamos a la función "getNameDiasForMes" con el número de mes ingresado y guardamos el resultado.
+		const resultado = getNameDiasForMes(numMes);
+
+		// Verificamos si se obtuvo un resultado válido.
+		if (resultado) {
+			// Si se obtuvo un resultado válido, mostramos un mensaje con el nombre del mes y la cantidad de días.
+			alert(`El mes ${resultado.nombre} tiene ${resultado.dias} días`);
+		} else {
+			// Si el resultado no fue válido, mostramos un mensaje indicando que el mes es inválido.
+			alert('Mes inválido');
+		}
+
+	</script>
+
+</body>
+
+</html>

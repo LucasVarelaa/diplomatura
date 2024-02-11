@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Link</h1>
+    <!-- El enlace con ID 'link' y la URL especificada -->
+    <a id="link" href="https://developer.mozilla.org">Mozilla Developer Network</a>
+
+    <script>
+        // Obtenemos el enlace por su ID
+        const link = document.getElementById('link');
+ /*Profe       
+        // Agregamos un evento de escucha para el clic en el enlace
+        link.addEventListener('click', function(e) {
+            // Evitamos que el enlace funcione por defecto
+            e.preventDefault();
+            // Mostramos una alerta con la URL del enlace usando e.currentTarget.href
+            alert('Quisiste ir a: ' + e.currentTarget.href);
+        });
+*/
+
+//Mi cambio para que si le da aceptar te lleve a la pagina
+        link.addEventListener('click', function(e) {
+    // Mostramos una alerta con la URL del enlace y guardamos la respuesta en una variable
+    var respuesta = confirm('¿Quieres ir a: ' + e.currentTarget.href + '?');
+    
+    // Verificamos si el usuario hizo clic en "Aceptar"
+    if (respuesta === true) {
+        // Si sí, redirigimos al usuario a la URL del enlace
+        window.location.href = e.currentTarget.href;
+    } else {
+        // Si no, evitamos que el enlace funcione por defecto
+        e.preventDefault();
+    }
+});
+
+    </script>
+</body>
+</html>

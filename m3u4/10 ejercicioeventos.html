@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Boton</h1>
+    <button id="boton">Mostrar Alert</button>
+      
+    <script>
+        // Obtenemos el botón por su ID
+        const boton = document.getElementById('boton');
+        
+        // Agregamos un evento de escucha para el clic en el botón
+        boton.addEventListener('click' , function(e) {
+            // Mostramos una alerta con el texto del botón usando e.currentTarget.innerText
+            alert(e.currentTarget.innerText);
+            //Aquí e representa el evento. currentTarget se refiere al elemento en el que se ha registrado el evento (en este caso, el botón). 
+            //innerText devuelve el texto contenido dentro del elemento, que en este caso es el texto del botón.
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Caracteres Lucas Varela</title>
+</head>
+<body>
+    <textarea id="texto" cols="50" rows="10"></textarea>
+    <span id="contador">0 caracteres</span>
+    <script>
+        const textarea = document.getElementById('texto');
+        const contador = document.getElementById('contador');
+        
+//Esto agrega un event listener al <textarea> que escucha el evento input. El evento input se dispara cada vez que el valor del <textarea> cambia, es decir, cada vez que el usuario ingresa o elimina un carácter.
+        textarea.addEventListener('input', function() { //Cuando se usa .value, se accede al valor actual del elemento <textarea>, que es una cadena de texto que representa el contenido del área de texto.
+            const caracteres = textarea.value.length; //textarea.value se refiere al contenido (texto) y el .length cuenta los caracteres del texto
+            // se utiliza para actualizar visualmente el contador de caracteres en la página web cada vez que el usuario ingresa o elimina un carácter en el 
+            contador.textContent = `${caracteres} caracteres`;
+        })
+    </script>
+</body>
+</html>

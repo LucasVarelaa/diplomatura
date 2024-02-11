@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+
+        // Definimos una variable 'nombre' y una variable 'edad'
+        const nombre = 'Flavia';
+        const edad = 40;
+
+        // Usamos template literals para crear un mensaje personalizado con las variables
+        console.log(`¡Hola ${nombre}!. Vos tenes ${edad} `); // ¡Hola Flavia!. Vos tenes 40
+
+        // Definimos dos edades adicionales
+        const edad1 = 18;
+        const edad2 = 32;
+
+        // Usamos template literals junto con operadores ternarios para crear mensajes personalizados
+        // El operador ternario evalúa si la edad es mayor o igual a 21 y establece la cuota correspondiente
+        const mensaje1 = `La cuota para personas de ${edad1} es de ${edad1 >= 21 ? 500 : 350}`; 
+        // La cuota para las personas de 18 es de 350
+        const mensaje2 = `La cuota para personas de ${edad2} es de ${edad2 >= 21 ? 500 : 350}`; 
+        // La cuota para las personas de 32 es de 500
+
+        // Imprimimos los mensajes en la consola
+        console.log(mensaje1);
+        console.log(mensaje2);
+
+        // Las plantillas de cadena de texto (template literals) nos permiten intercalar variables o expresiones dentro de nuestras cadenas de texto 
+        // sin tener que recurrir a la concatenación, lo que hace que el código sea más legible y fácil de mantener.
+
+    </script>
+</body>
+
+</html>

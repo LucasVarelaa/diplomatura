@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <!-- Incluimos una hoja de estilo externa -->
+    <link rel="stylesheet" href="16_ejercicio.css">
+</head>
+<body>
+    <h3>Agregar y remover clases de CSS</h3>
+    <!-- Div con clase 'cuadrado' -->
+    <div class="cuadrado"></div>
+    <p>
+        <!-- Botones para agregar estilos -->
+        <button class="boton" id="rojo">Rojo</button>
+        &nbsp;
+        <button class="boton" id="borde">Borde</button>
+        &nbsp;
+        <!-- Botón para resetear los estilos -->
+        <button class="boton" id="reset">Reset</button>
+    </p>
+
+    <script>
+        // CSS
+        // Obtenemos el cuadrado por su clase 'cuadrado'
+        const cuadrado = document.getElementsByClassName('cuadrado')[0];
+        // Obtenemos los botones por sus IDs
+        const rojo = document.getElementById('rojo');
+        const borde = document.getElementById('borde');
+        const reset = document.getElementById('reset');        
+        
+        // Agregamos un evento de clic al botón 'rojo'
+        rojo.addEventListener('click', function() {
+            // Agregamos la clase 'rojo' al cuadrado
+            cuadrado.classList.add('rojo');
+        });
+
+        // Agregamos un evento de clic al botón 'borde'
+        borde.addEventListener('click', function () {
+            // Agregamos la clase 'borde' al cuadrado
+            cuadrado.classList.add('borde');
+        });
+
+        // Agregamos un evento de clic al botón 'reset'
+        reset.addEventListener('click', function () {
+            // Removemos las clases 'rojo' y 'borde' del cuadrado
+            cuadrado.classList.remove('rojo', 'borde');
+        });
+    </script>
+</body>
+</html>

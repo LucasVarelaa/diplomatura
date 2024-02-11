@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <script>
+        // Creamos un array de números
+        const numeros = [10, 9, 22, 53, 24, 5, 6 ];
+
+        // Usamos el método find() en el array 'numeros'
+        // find() toma una función de callback como argumento
+        // Esta función se ejecuta una vez por cada elemento del array 'numeros'
+        // La función debe retornar true si queremos incluir el elemento en el nuevo array, o false si no
+        // En este caso, usamos una función de flecha (arrow function) para verificar si el número es mayor que 12
+
+        const encontrado = numeros.find(num => num > 12);
+
+        // Imprimimos el primer elemento que cumple la condición en la consola
+        console.log(encontrado); // 22
+
+        // El método find() devuelve el valor del primer elemento del array que cumple 
+        // la función de prueba proporcionada, de lo contrario devuelve undefined
+
+    </script>
+
+
+
+</body>
+
+</html>

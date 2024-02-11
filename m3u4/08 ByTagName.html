@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="caja1" style="border: solid blue 3px">
+        <p>parrafo 1 de la caja1</p>
+        <p>parrafo 2 de la caja 1</p>
+        <p>parrafo 3 de la caja 1</p>
+
+        <div id="caja2" style="border: solid red 3px">
+            <p>parrafo 1 de la caja2</p>
+            <p>parrafo 1 de la caja 2</p>
+        </div>
+    </div>
+    <p>parrafo 1 afuera</p>
+    <p>pararfo 2 afuera</p>
+
+    <button onclick="todosLosParrafos();">
+        muestra todos los elementos p en el documento</button>
+
+    <button onclick="caja1ParaElems();">
+        muestra todos los elementos p en div1</button>
+
+    <button onclick="caja2ParaElems();">
+        muestra todos los elementos p en div2</button>
+
+    <script>
+        // Función que muestra la cantidad de elementos <p> en todo el documento
+        function todosLosParrafos() {
+            // Obtenemos todos los elementos <p> utilizando getElementsByTagName
+            const allParafos = document.getElementsByTagName("p");
+
+            // Obtenemos la longitud (cantidad) de elementos <p>
+            const num = allParafos.length;
+
+            // Mostramos la cantidad de elementos <p> en una alerta
+            alert(`Hay ${num} elementos <p> en este documento`);
+        }
+
+        // Función que muestra la cantidad de elementos <p> en el div con id "caja1"
+        function caja1ParaElems() {
+            // Obtenemos el elemento div con id "caja1"
+            var caja1 = document.getElementById("caja1")
+            // Obtenemos todos los elementos <p> dentro de "caja1" utilizando getElementsByTagName
+            var caja1parraf = caja1.getElementsByTagName("p");
+
+            // Obtenemos la longitud (cantidad) de elementos <p> dentro de "caja1"
+            var num = caja1parraf.length;
+
+            // Mostramos la cantidad de elementos <p> dentro de "caja1" en una alerta
+            alert(`Hay ${num} elementos <p> en caja1`);
+        }
+
+        // Función que muestra la cantidad de elementos <p> en el div con id "caja2"
+        function caja2ParaElems() {
+            // Obtenemos el elemento div con id "caja2"
+            var caja2 = document.getElementById("caja2")
+            // Obtenemos todos los elementos <p> dentro de "caja2" utilizando getElementsByTagName
+            var caja2parraf = caja2.getElementsByTagName("p");
+
+            // Obtenemos la longitud (cantidad) de elementos <p> dentro de "caja2"
+            var num = caja2parraf.length;
+
+            // Mostramos la cantidad de elementos <p> dentro de "caja2" en una alerta
+            alert(`Hay ${num} elementos <p> en caja2`);
+        }
+
+    </script>
+</body>
+
+</html>

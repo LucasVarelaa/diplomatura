@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script>
+
+// Esta función valida la longitud de una cadena de texto
+function validarLargo(texto, largoRequerido) {
+    // Devuelve true si el texto tiene al menos la longitud requerida, de lo contrario, devuelve false
+    return texto.length >= largoRequerido; //.length Esta propiedad indica la longitud o el número de elementos en el objeto al que se aplica. (Si es texto indica cantidad de caracteres y si es un array devuelve la cantidad de elementos)
+}
+
+// Esta función se llama cuando se hace clic en el botón "Enviar"
+function validarForm() {
+    // Se establece una variable para validar el nombre (actualmente siempre es válido)
+    const nombreValido = true;
+    // Se llama a la función validarLargo para validar la longitud de la contraseña
+    const passWordValido = validarLargo(document.form1.text1.value, 5);
+
+    // Se calcula el resultado final basado en la validez del nombre y la contraseña
+    const resultado = nombreValido && passWordValido;
+    // Se muestra un mensaje de alerta dependiendo del resultado
+    if (resultado) {
+        alert('es valido');
+    } else {
+        alert('NO es valido');
+    }
+}
+
+
+</script>
+</head>
+
+<body>
+    <!-- Formulario que solicita al usuario que ingrese una contraseña -->
+    <form name="form1">
+        Ingrese clave (al menos 5 caracteres): 
+        <input type="password" name="text1"> <!-- Campo de entrada de contraseña -->
+        <input type="button" onclick="validarForm()" value="Enviar"> <!-- Botón para enviar el formulario -->
+    </form>
+</body>
+</html>

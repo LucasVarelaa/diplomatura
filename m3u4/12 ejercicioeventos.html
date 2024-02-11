@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <!-- Formulario con ID 'formulario' y acciones para '/enviar' -->
+    <form action="/enviar" id="formulario">
+        <p>
+            <!-- Campo de entrada de texto para el nombre -->
+            <label>Nombre: <input name="nombre" type="text"></label>
+        </p>
+        <p>
+            <!-- Área de texto para el mensaje -->
+            <label>Mensaje: <textarea name="mensaje" cols="30" rows="10"></textarea></label>
+        </p>
+        <p>
+            <!-- Botón de envío del formulario -->
+            <button>Enviar</button>
+        </p>
+    </form>
+
+    <script>
+        // Obtenemos el formulario por su ID
+        const formulario = document.getElementById('formulario');
+        
+        // Agregamos un evento de escucha para el envío del formulario
+        formulario.addEventListener('submit', function(e) {
+            // Evitamos el comportamiento predeterminado del formulario (envío)
+            e.preventDefault();
+            
+            // Validamos si el campo de nombre está vacío
+            if (e.currentTarget.nombre.value == '') {
+                alert('El campo nombre es requerido');
+                return; // Salimos de la función si el campo está vacío
+            }
+
+            // Validamos si el campo de mensaje está vacío
+            if (e.currentTarget.mensaje.value == '') {
+                alert('El campo mensaje es requerido');
+                return; // Salimos de la función si el campo está vacío
+            }
+
+            // Si ambos campos están completos, mostramos una alerta de agradecimiento
+            alert(`Gracias ${e.currentTarget.nombre.value} por enviarnos ${e.currentTarget.mensaje.value}`);
+        });
+    </script>
+</body>
+</html>

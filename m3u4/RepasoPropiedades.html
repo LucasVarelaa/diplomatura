@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>/*
+1: querySelector: Propiedad del objeto document que selecciona el primer elemento que coincida con un selector CSS especificado.
+
+2: querySelectorAll: Similar a querySelector, pero devuelve una lista de todos los elementos que coinciden con el selector CSS especificado.
+
+3: style: Propiedad de un elemento HTML que proporciona acceso a sus estilos CSS.
+
+4: getElementsByClassName: Método que devuelve una lista de todos los elementos que tienen una clase CSS específica.
+
+5: length: Propiedad que indica la longitud de un array o la cantidad de caracteres en una cadena.
+
+6: getElementById: Método que devuelve el elemento HTML que tiene el ID especificado.
+
+7: addEventListener: Método que permite asignar un evento a un elemento y especificar una función que se ejecutará cuando ocurra ese evento.
+
+8: preventDefault: Método que se utiliza en los manejadores de eventos para evitar el comportamiento predeterminado de un evento, como el envío de un 
+formulario o el seguimiento de un enlace.
+
+9: classList: Propiedad de un elemento HTML que proporciona acceso a las clases CSS aplicadas a ese elemento.
+
+10: toggle: Método de classList que alterna la presencia de una clase en un elemento; la agrega si no está presente y la quita si ya está presente.
+
+11: map: Método de arrays que crea un nuevo array con los resultados de llamar a una función proporcionada en cada elemento del array.
+
+12: filter: Método de arrays que crea un nuevo array con todos los elementos que pasan la prueba implementada por la función proporcionada.
+
+13: find: Método de arrays que devuelve el valor del primer elemento que cumple una condición proporcionada.
+
+14: template literals: Forma de crear cadenas de texto en JavaScript que permite incluir expresiones incrustadas.
+
+15: Spread operator (...): Operador que permite expandir elementos de un array o propiedades de un objeto.
+
+16: console.log(): Método que imprime mensajes de registro en la consola del navegador para propósitos de depuración.
+
+*/
+
+  
+        //Funciones.......
+
+
+/*
+    Declaración de función:
+
+Úsalo cuando necesites una función que pueda ser invocada antes de que se haya definido en el código (debido al "hoisting").
+Es útil para funciones que necesitan ser reutilizadas varias veces en tu código.
+Son adecuadas para funciones más largas y complejas.
+*/
+    function myFunction() {
+// Código de la función
+}
+
+
+/*
+    Expresión de función:
+
+Úsalo cuando necesites asignar una función a una variable o pasarla como argumento a otra función.
+Son útiles para definir funciones "in situ" en el código donde serán utilizadas.
+Permiten definir funciones anónimas.
+*/
+const myFunction = function() {
+// Código de la función
+};
+
+
+/*
+    Arrow function (Funciones de flecha):
+
+Úsalas para escribir funciones cortas y concisas.
+Son ideales para funciones que no necesitan vincular su propio contexto (this).
+Son una forma más compacta de escribir funciones, especialmente en situaciones donde se requiere una sintaxis más breve.
+*/
+const myFunction = () => {
+    // Código de la función
+};
+
+
+/*
+    Método de objeto:
+
+Úsalos cuando necesites definir funciones asociadas a objetos específicos.
+Son útiles para encapsular la funcionalidad relacionada con un objeto en particular.
+Permiten acceder a las propiedades y métodos del objeto a través de la referencia this.
+*/
+const obj = {
+    myMethod: function() {
+        // Código de la función
+    }
+};
+
+
+/*
+    Constructor de función:
+
+Úsalo en situaciones muy específicas donde necesites crear funciones dinámicamente a partir de cadenas de texto.
+No es comúnmente utilizado en el desarrollo cotidiano de JavaScript, ya que tiene limitaciones y riesgos de seguridad asociados.
+*/
+const myFunction = new Function('a', 'b', 'return a + b');
+
+</script>
+
+</body>
+
+</html>

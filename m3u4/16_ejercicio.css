@@ -1,0 +1,16 @@
+/* Estilos para el cuadrado */
+.cuadrado {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+/* Estilos adicionales cuando tiene la clase 'rojo' */
+.cuadrado.rojo {
+    background: red;
+}
+
+/* Estilos adicionales cuando tiene la clase 'borde' */
+.cuadrado.borde {
+    border: 2px solid black;
+}

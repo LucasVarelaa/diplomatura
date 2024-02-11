@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar el Fondo Lucas Varela</title>
+
+    <style>
+        .cuadrado {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #cuadrado1 {
+            background-color: red;
+        }
+
+        #cuadrado2 {
+            background-color: green;
+        }
+
+        #cuadrado3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. Cada cuadrado debera tener un color distinto. -->
+    <div id="cuadrado1" class="cuadrado" onclick="changeBackgroundColor('red')"></div> <!--cuando hago click en un cuadrado le pasa el texto (red) a la funcion que seria lo que define a "color" -->
+    <div id="cuadrado2" class="cuadrado" onclick="changeBackgroundColor('green')"></div>
+    <div id="cuadrado3" class="cuadrado" onclick="changeBackgroundColor('blue')"></div>
+
+    <script>
+        function changeBackgroundColor(color) { //Defino la variable color segun el cuadrado que toco y de ese mismo color se hace el fondo
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

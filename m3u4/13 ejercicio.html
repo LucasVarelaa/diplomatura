@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Crear y eliminar elementos</h1>
+    <!-- Lista con ID 'lista' -->
+    <ul id="lista">
+        <!-- Elementos de la lista con enlaces "X" para eliminar -->
+        <li>Item <a href="#">X</a></li>
+        <li>Item <a href="#">X</a></li>
+        <li>Item <a href="#">X</a></li>
+    </ul>
+    <!-- Enlace "Agregar" con clase 'agregar' -->
+    <a href="#" class="agregar">Agregar</a>
+
+
+    <script>
+        // Obtenemos la lista por su ID
+        const lista = document.getElementById('lista');
+
+        // Agregamos un evento de escucha para los clics en la lista
+        // Los eventos de la lista recorren para todos los hijos.
+        // En este caso, queremos que se haga clic en cualquier <a> dentro de la lista y, como los vamos a agregar y remover dinámicamente, no es práctico
+        // asignar un listener a cada <a>.
+        lista.addEventListener('click', function(e) {
+            console.log('click en lista');
+            // Verificamos si se hizo clic en un enlace (elemento <a>)
+            if (e.target.nodeName.toLowerCase() === 'a') {
+                e.preventDefault(); // Evitamos el comportamiento predeterminado del enlace
+                e.target.parentNode.remove(); // Eliminamos el elemento padre del enlace (<li>)
+            }
+        });
+
+        // Obtenemos el enlace "Agregar" por su clase
+        // getElementsByClassName busca por clase pero devuelve un array
+        // Por eso, sabiendo que tenemos solo 1, usamos el 0 para agarrar el 1ro.
+        const agregar = document.getElementsByClassName('agregar')[0];
+
+        // Función para agregar un nuevo elemento a la lista
+        function agregarElemento(e) {
+            e.preventDefault();
+            // Creamos un nuevo elemento <li>
+            const nuevo = document.createElement('li');
+            // Asignamos el texto al nuevo elemento
+            nuevo.innerHTML = 'Item ';
+
+            // Creamos un nuevo enlace <a> para eliminar el nuevo elemento
+            const x = document.createElement('a');
+            x.href = '#'; // Asignamos un href para que se vea como un enlace
+            x.innerText = 'X'; // Texto "X" para el enlace
+
+            // Agregamos el enlace <a> al nuevo elemento <li>
+            nuevo.appendChild(x);
+
+            // Agregamos el nuevo elemento <li> a la lista <ul>
+            lista.appendChild(nuevo);
+        }
+
+        // Agregamos un evento de escucha para los clics en el enlace "Agregar"
+        agregar.addEventListener('click', agregarElemento);
+    </script>
+</body>
+</html>

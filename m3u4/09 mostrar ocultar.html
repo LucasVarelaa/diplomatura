@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <ul>
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        <li class="item">Item 3</li>
+        <li class="item">Item 4</li>
+        <li class="item">Item 5</li>
+    </ul>
+
+    <button onclick="cambiarVisibilidad(1)">Cambiar visibilidad item 2</button>
+    <button onclick="cambiarDisplay(3)">Cambiar display item 4</button>
+
+    <script>
+        // Obtenemos todos los elementos con la clase 'item'
+        const items = document.getElementsByClassName('item');
+
+        // Función para cambiar la visibilidad de un elemento basado en su índice
+        function cambiarVisibilidad(numItem) {
+            // Obtenemos el elemento correspondiente al índice proporcionado
+            const item = items[numItem];
+
+            // Verificamos si el estilo de visibilidad está vacío (visible)
+            if (item.style.visibility == '') {
+                // Si está vacío, establecemos la visibilidad como 'hidden' (oculto)
+                item.style.visibility = 'hidden';
+            } else {
+                // Si no está vacío, restablecemos la visibilidad (haciéndolo visible)
+                item.style.visibility = '';
+            }
+        }
+
+        // Función para cambiar la propiedad de visualización de un elemento basado en su índice
+        function cambiarDisplay(numItem) {
+            // Obtenemos el elemento correspondiente al índice proporcionado
+            const item = items[numItem];
+
+            // Verificamos si el estilo de visualización está vacío (visible)
+            if (item.style.display == '') {
+                // Si está vacío, establecemos la propiedad de visualización como 'none' (oculto)
+                item.style.display = 'none';
+            } else {
+                // Si no está vacío, restablecemos la propiedad de visualización (haciéndolo visible)
+                item.style.display = '';
+            }
+        }
+    </script>
+</body>
+</html>
