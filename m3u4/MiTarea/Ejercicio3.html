@@ -32,6 +32,12 @@
         }
 
         console.log(alumnosAprobados); //Se ve en la consola del sitio
+
+        for(let j = 0; j < alumnosAprobados.length; j++)
+        {
+            document.write(`<p>Alumno: ${alumnosAprobados[j].nombre}, Nota: ${alumnosAprobados[j].nota}<p>`)
+        }
+
     </script>
 </body>
 </html>

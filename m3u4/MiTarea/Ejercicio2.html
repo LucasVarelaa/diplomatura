@@ -17,7 +17,14 @@
             const caracteres = textarea.value.length; //textarea.value se refiere al contenido (texto) y el .length cuenta los caracteres del texto
             // se utiliza para actualizar visualmente el contador de caracteres en la página web cada vez que el usuario ingresa o elimina un carácter en el 
             contador.textContent = `${caracteres} caracteres`;
+            
         })
+/*PROFE: No uso input, uso keyup e hizo contador.innerText = texto.value.length sin necesidaad del const caracteres
+
+        textarea.addEventListener('keyup', function() {
+            contador.innerText = texto.value.length;
+        })
+*/
     </script>
 </body>
 </html>
