@@ -18,9 +18,9 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="nosotros" element={<Homepage />} />
-          <Route path="novedades" element={<Homepage />} />
-          <Route path="contacto" element={<Homepage />} />
+          <Route path="nosotros" element={<NosotrosPage />} />
+          <Route path="novedades" element={<NovedadesPage />} />
+          <Route path="contacto" element={<contactoPage />} />
         </Routes>
       </BrowserRouter>
 
