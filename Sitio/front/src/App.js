@@ -4,7 +4,9 @@ import Header from "./components/layout/Header";
 import Nav from "./components/layout/Nav";
 import Footer from "./components/layout/Footer";
 
-import contactoPage from "./pages/contactoPage";
+import "./App.css";
+
+import ContactoPage from "./pages/ContactoPage";
 import Homepage from "./pages/HomePage";
 import NosotrosPage from "./pages/NosotrosPage";
 import NovedadesPage from "./pages/NovedadesPage";
@@ -20,7 +22,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="nosotros" element={<NosotrosPage />} />
           <Route path="novedades" element={<NovedadesPage />} />
-          <Route path="contacto" element={<contactoPage />} />
+          <Route path="contacto" element={<ContactoPage />} />
         </Routes>
       </BrowserRouter>
 

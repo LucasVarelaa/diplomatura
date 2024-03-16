@@ -1,6 +1,6 @@
 import React from "react";
 
-const contactoPage = (props) => {
+const ContactoPage = (props) => {
     return (
         <main className="holder contacto">
             <div>
@@ -38,4 +38,4 @@ const contactoPage = (props) => {
     );
 }
 
-export default contactoPage;
+export default ContactoPage;

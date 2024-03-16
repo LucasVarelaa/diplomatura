@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
+
+/* -------- */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.holder{
+  max-width: 960px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  color: rgb(83, 82, 82);
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* -------- */
+
+header{
+  background-color: rgb(5, 5, 5);
+  padding: 16px 0;
+}
+
+header img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+header h1{
+  font-size: 30px;
+  font-weight: 100;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+  bottom: 35px;
+  margin-left: 10px;
+}
+
+/* -------- */
+
+footer{
+  background-color: rgb(0, 0, 0);
+  clear: both;
   color: white;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* -------- */
+
+nav {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
+
+nav ul li {
+ flex-grow: 1;
+}
+
+nav ul li a{
+ color:white;
+ text-decoration: none;
+ padding: 3px 6px;
+ font-display: block;
+ text-align: center;
+}
+
+nav ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+nav ul li a.activo{
+  background-color: rgba(0, 20, 109, 0.3);
+}
+
+/*inicio home*/
+
+.homeimg{
+  width:"400px";
+  align-items: center;    
+}
+
+.bienvenidos{
+  width: 60%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.bienvenidos p{
+  font-size: 20px;
+}
+
+.testimonios{
+  width: 40%;
+}
+
+.columnas{
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonio{
+  background-color: rgb(235, 230, 230);
+  padding: 16px;
+}
+
+.testimonio .cita{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  display: block;
+}
+
+.testimonio .autor{
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  margin: 12px 0;
+}
+
+
+/*inicio nosotros*/
+
+
+.descripcion h2{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-style:normal;
+
+}
+
+.personas{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.persona{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 18%;
+  text-align: center;
+  padding: 13px;
+  box-sizing: border-box;
+}
+
+.persona img{
+  border-radius: 50%;
+  max-width: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.persona h5,
+.persona h6{
+  margin: 0;
+  font-weight: normal;
+  color: black;
+}
+
+.persona h5{
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.persona h6{
+  font-size: 11px;
+  font-style: italic;
+}
+
+.persona p{
+  color: #01060c;
+  font-size: 10px;
+}
+
+/* Novedades */
+
+
+/*inicio Contacto*/
+
+.contacto {
+  display: flex;
+  gap: 24px;
+}
+
+.datos p {
+  font-size: 14px;
+}
+
+.datos ul li {
+  font-size: 13px;
+}
+
+.formulario p {
+  display: flex;
+}
+
+.formulario p label {
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.formulario p input,
+.formulario p textarea {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid;
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+.formulario p:nth-child(4) {
+  align-items: start;
+}
+
+.formulario textarea {
+  resize: none;
+  height: 150px;
+}
+
+.formulario input[type="submit"] {
+  background-color: #01060c;
+  box-shadow: 0 0 10px;
+  color: white;
+  font-size: 16px;
+  padding: 6px 20px;
+  width: auto;
+  position: relative;
+  left: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: #01060c;
+}
+
+.contacto,
+.otros-medios {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.contacto div {
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* --------------------------- */
