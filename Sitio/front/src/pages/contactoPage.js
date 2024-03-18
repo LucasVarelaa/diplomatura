@@ -34,7 +34,7 @@ const ContactoPage = (props) => {
                     <li><i className="fa-brands fa-instagram"></i> Instagram: secretosdefamiliagourmet</li>
                 </ul>
                 <h3><i className="fa-solid fa-house"></i> Alfredo Lorenzo Palacio 2582</h3>
-            </div>
+            </div> 
         </main> 
     );
 }

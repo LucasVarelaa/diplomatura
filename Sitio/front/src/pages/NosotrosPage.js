@@ -69,7 +69,8 @@ const NosotrosPage = (props) => {
                         <li>Se encarga de la logística y distribución de los pedidos.</li>
                         <li>Comprometido con la satisfacción del cliente en cada entrega.</li>
                     </ul>
-                </div>
+                    <h9>Hola</h9>
+                </div> 
             </div>
         </div>
     </main>
