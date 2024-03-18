@@ -24,7 +24,7 @@ function App() {
           <Route path="nosotros" element={<NosotrosPage />} />
           <Route path="novedades" element={<NovedadesPage />} />
           <Route path="contacto" element={<ContactoPage />} />
-          <Route path="producto" element={<ProductoPage />} />
+          <Route path="productos" element={<ProductoPage />} />
         </Routes>
       </BrowserRouter>
 

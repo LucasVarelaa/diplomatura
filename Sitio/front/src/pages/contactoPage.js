@@ -4,38 +4,38 @@ const ContactoPage = (props) => {
     return (
         <main className="holder contacto">
             <div>
-                <h2>Contacto Rapido</h2>
+                <h2>Contacto Rápido</h2>
                 <form action="" method="" className="formulario">
                     <p>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="" />
+                        <label htmlFor="nombre">Nombre</label>
+                        <input type="text" name="nombre" />
                     </p>
                     <p>
-                        <label for="email">Email</label>
-                        <input type="text" name="" />
+                        <label htmlFor="email">Email</label>
+                        <input type="text" name="email" />
                     </p>
                     <p>
-                        <label for="telefono">Telefono</label>
-                        <input type="text" name="" />
+                        <label htmlFor="telefono">Teléfono</label>
+                        <input type="text" name="telefono" />
                     </p>
                     <p>
-                        <label for="mensaje">Mensaje</label>
-                        <input type="text" name="" />
+                        <label htmlFor="mensaje">Mensaje</label>
+                        <input type="text" name="mensaje" />
                     </p>
-                    <p class="acciones"><input type="submit" value="Enviar" /></p>
+                    <p className="acciones"><input type="submit" value="Enviar" /></p>
                 </form>
-            </div >
-            <div class="datos">
-                <h2>Otras vias de comunicacación</h2>
-                <p>Tambien puede contactarse con nosotros usando los siguientes medios</p>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i>  whatsapp: 11 3351-6293</li>
-                    <li><i class="fa-solid fa-envelope"></i>  Email: secretosdefamilia@gmail.com</li>
-                    <li><i class="fa-brands fa-instagram"></i>  Instagram: secretosdefamiliagourmet</li>
-                </ul>
-                <h3><i class="fa-solid fa-house"></i>  Alfredo Lorenzo Palacio 2582</h3>
             </div>
-        </main>
+            <div className="datos">
+                <h2>Otras vías de comunicación</h2>
+                <p>También puede contactarse con nosotros usando los siguientes medios</p>
+                <ul>
+                    <li><i className="fa-solid fa-phone"></i> WhatsApp: 11 3351-6293</li>
+                    <li><i className="fa-solid fa-envelope"></i> Email: secretosdefamilia@gmail.com</li>
+                    <li><i className="fa-brands fa-instagram"></i> Instagram: secretosdefamiliagourmet</li>
+                </ul>
+                <h3><i className="fa-solid fa-house"></i> Alfredo Lorenzo Palacio 2582</h3>
+            </div>
+        </main> 
     );
 }
 

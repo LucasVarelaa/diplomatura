@@ -16,12 +16,12 @@ const ProductoPage = (props) => {
                 </p>
                 <p>
                     San Juan, una provincia argentina famosa por su producción de aceite de oliva, ofrece condiciones
-                    climáticas y geográficas óptimas para el cultivo de olivos. Con su clima mediterráneo y suelos
+                    climáticas y geográficas óptimas para el cultinvo de olivos. Con su clima mediterráneo y suelos
                     adecuados, San Juan es un lugar ideal para el cultivo de variedades de aceitunas de alta calidad, lo
                     que contribuye a la excelencia del aceite producido en la región. </p>
             </div>
         </div>
-        <div cclassNamelass="producto">
+        <div className="producto">
             <img src="img/AceitunasVerdesScacciatas.jpg" alt="Tren" />
             <div className="info">
                 <h4>Aceitunas</h4>
