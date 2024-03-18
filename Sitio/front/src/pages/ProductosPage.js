@@ -2,10 +2,10 @@ import React from "react";
 
 const ProductoPage = (props) => {
     return (
-        <main class="holder">
-        <div class="producto">
-            <img src="img/aceite4.jpg" alt="Aceite">
-            <div class="info">
+        <main className="holder">
+        <div className="producto">
+            <img src="img/aceite4.jpg" alt="Aceite" />
+            <div className="info">
                 <h4>Aceite de Oliva</h4>
                 <p>
                     El aceite de oliva extra virgen es conocido por ser el más puro y de mayor calidad entre todos los
@@ -21,9 +21,9 @@ const ProductoPage = (props) => {
                     que contribuye a la excelencia del aceite producido en la región. </p>
             </div>
         </div>
-        <div class="producto">
-            <img src="img/AceitunasVerdesScacciatas.jpg" alt="Tren">
-            <div class="info">
+        <div cclassNamelass="producto">
+            <img src="img/AceitunasVerdesScacciatas.jpg" alt="Tren" />
+            <div className="info">
                 <h4>Aceitunas</h4>
                 <p>Las aceitunas, frutos del olivo, son esenciales en la gastronomía mundial. Nuestra selección incluye
                     aceitunas negras y verdes scacciatas, así como aceitunas en salmuera, en una variedad de
@@ -38,8 +38,8 @@ const ProductoPage = (props) => {
                     comidas sean aún más memorables.</p>
             </div>
         </div>
-        <div class="producto">
-            <img src="img/BerenjenasAlaCalabresa.jpg" alt="Tren">
+        <div className="producto">
+            <img src="img/BerenjenasAlaCalabresa.jpg" alt="Tren" />
             <div class="info">
                 <h4>Berenjenas</h4>
                 <p>Las berenjenas, versátiles y deliciosas, son una adición imprescindible en cualquier cocina. En
@@ -57,9 +57,9 @@ const ProductoPage = (props) => {
                 </p>
             </div>
         </div>
-        <div class="producto">
-            <img src="img/PicklesAlAjillo.jpg" alt="Tren">
-            <div class="info">
+        <div className="producto">
+            <img src="img/PicklesAlAjillo.jpg" alt="Tren" />
+            <div className="info">
                 <h4>Pickles al Ajillo</h4>
                 <p>Nuestra selección también incluye los deliciosos pickles al ajillo, un acompañamiento que agrega un
                     toque de sabor y picante a tus platos. Estos pepinillos encurtidos en una mezcla de vinagre y
@@ -76,9 +76,9 @@ const ProductoPage = (props) => {
                 </p>
             </div>
         </div>
-        <div class="producto">
-            <img src="img/PorotosConPimentonAhumado.jpg" alt="Tren">
-            <div class="info">
+        <div className="producto">
+            <img src="img/PorotosConPimentonAhumado.jpg" alt="Tren" />
+            <div className="info">
                 <h4>Porotos con Pimenton Ahumado</h4>
                 <p>Agrega un toque ahumado y lleno de sabor a tus platos con nuestros porotos con pimentón ahumado.
                     Estos frijoles, cuidadosamente preparados con la combinación justa de pimentón y especias, ofrecen
@@ -95,9 +95,9 @@ const ProductoPage = (props) => {
                 </p>
             </div>
         </div>
-        <div class="producto">
-            <img src="img/TomatesSecosAlSol.jpg" alt="Tomates">
-            <div class="info">
+        <div className="producto">
+            <img src="img/TomatesSecosAlSol.jpg" alt="Tomates" />
+            <div className="info">
                 <h4>Tomates Secos al Sol en Aceite</h4>
                 <p>
                     Descubre la intensidad del sol mediterráneo con nuestros tomates secos en aceite. Seleccionados con
