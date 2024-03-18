@@ -3,8 +3,7 @@ import React from "react";
 const Header = (props) => {
     return (
         <div className="holder">
-            <img src="img/logo192.png" width="100" alt="Secretos de Familia" />
-            <h1>Secretos de Familia</h1>
+            <h1 class="titulo">Secretos de Familia</h1>
         </div>
     );
 }
