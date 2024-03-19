@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Nav = (props) => {
     return (
-        <nav >
+        <nav className="navbar">
             <div>
                 <ul>
                     <li><NavLink to="/" className={({ isActive }) => isActive ? "activo" : undefined }>Home</NavLink></li>

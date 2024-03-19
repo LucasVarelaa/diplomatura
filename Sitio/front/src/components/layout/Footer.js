@@ -7,13 +7,13 @@ const Footer = (props) => {
             <div className="nombre">
                 <h1>Secretos de Familia</h1>
             </div>
-            <div className="contactos">
+     {/*    <div className="contactos">
                 <ul>
                     <li><i className="fa-solid fa-mobile-screen-button"></i> +54 9 11 3351-6293</li>
                     <li><i className="fa-solid fa-envelope"></i> secretosdefamilia@gmail.com</li>
                     <li><i className="fa-solid fa-location-dot"></i> Alfredo Lorenzo Palacio 2582</li>
                 </ul>
-            </div>
+            </div>   */}
             <div className="info">
                 <h2 className="h2"><i className="fa-solid fa-bell"></i>HORARIOS DEPOSITO</h2>
                 <ul>

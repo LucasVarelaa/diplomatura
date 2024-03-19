@@ -34,16 +34,12 @@ const Homepage = (props) => {
                     </p>
                     <hr />
                     <p>
-                        En Secretos de Familia, valoramos la importancia de las relaciones duraderas y el compromiso con la
-                        excelencia. Nos esforzamos por cultivar una comunidad de amantes de la buena comida que comparten
-                        nuestra pasión por los sabores auténticos y la calidad sin compromisos.
-                    </p>
-                    <hr />
-                    <p>
                         Únete a nosotros en este viaje culinario donde la tradición, la calidad y la pasión se combinan para
                         ofrecerte lo mejor en cada bocado. ¡Bienvenido a Secretos de Familia!
                     </p>
+                    
                 </div>
+
                 <div className="dias">
                     <img src="img/infoDias.jpg" alt="dias" />
                 </div>

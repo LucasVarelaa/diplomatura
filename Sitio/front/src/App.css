@@ -35,8 +35,6 @@ h1 {
   margin-top: 20px; /* Aplicar un margen superior negativo al título 
 }
 */
-
-
 p {
   text-align: justify; /* Justificar el texto */
   font-size: 18px;
@@ -60,7 +58,6 @@ header {
   padding: 10px; /* Espaciado interno del encabezado */
   text-align: center;
   margin-bottom: -30px;
-  
 }
 
 header h1 {
@@ -79,15 +76,8 @@ nav {
   margin-bottom: 20px; /* Margen inferior */
 }
 
-nav ul {
-  list-style: none; /* Estilo de la lista */
-  margin: 0; /* Margen externo */
-  padding: 0; /* Relleno interno */
-  display: flex; /* Display flexible */
-}
-
 nav ul li {
-  flex-grow: 1; /* Factor de crecimiento flexible */
+  flex-grow: 0.1; /* Factor de crecimiento flexible */
 }
 
 nav ul li a {
@@ -98,8 +88,34 @@ nav ul li a {
    /* Alineación del texto */
 }
 
-nav ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.3); /* Color de fondo al pasar el mouse sobre el enlace */
+.navbar {
+  background-color: #24456b;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar los elementos de navegación */
+}
+
+.navbar ul li {
+  margin: 0 20px; /* Espacio entre elementos de navegación */
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a.activo {
+  background-color: #0b121a;
 }
 
 footer .col {
@@ -366,20 +382,25 @@ span {
 .contacto {
   display: flex;
   gap: 200px;
+  padding: 5px;
+}
+
+.contacto-container {
+  border: 2px solid #ccc; /* Borde sólido alrededor del contacto */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 10px;
 }
 
 .contacto div {
   width: 100%; 
 }
 
-.datos p {
-  font-size: 18px;
-}
-
 .datos ul li {
-  font-size: 20px;
-  margin-bottom: 15px;
-  line-height: 1.6;
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 2.5;
 }
 
 .formulario p {
@@ -390,6 +411,7 @@ span {
   min-width: 80px;
   display: flex;
   align-items: center;
+  margin-right: 10px;
 }
 
 .formulario p input, .formulario p textarea {
@@ -416,10 +438,6 @@ span {
   cursor: pointer;
 }
 
-.formulario input[type="submit"]:hover {
-  background-color: #2e64a1;
-}
-
 .fa-house {
   margin-right: 5px; /* Agrega un margen a la derecha del icono */
 }
@@ -427,6 +445,72 @@ span {
 textarea {
   height: 90px;
   resize: none;
+}
+
+
+.formulario {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #2e64a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e458b;
+}
+
+.datos {
+  width: 45%; /* Ancho del contenedor de datos de contacto */
+}
+
+.datos h2 {
+  color: #2e64a1;
+  font-size: 24px;
+}
+
+.datos ul {
+  padding-left: 20px;
+}
+
+.datos ul li {
+  margin-bottom: 10px;
+}
+
+.datos ul li i {
+  margin-right: 10px;
+  color: #2e64a1;
+}
+
+.datos h3 {
+  color: #2e64a1;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 /* Fin de Contacto*/
