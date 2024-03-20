@@ -1,0 +1,516 @@
+/* Configuración de la fuente */
+/*font-family: 'Open Sans', sans-serif;  Define la fuente utilizada en el documento */
+/* font-family: 'Sixtyfour', sans-serif; */
+/* font-family: 'Stint Ultra Condensed', serif; */
+
+/*font-family: 'Akaya Telivigala', system-ui;
+font-family: 'East Sea Dokdo', sans-serif;
+font-family: 'Meow Script', cursive;
+font-family: 'Nosifer', sans-serif;
+font-family: 'Qwitcher Grypen', cursive;
+*/
+
+h1 {
+  top: -13px;
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: 70px;
+  text-align: center;
+}
+
+/*
+.fixed-header, .fixed-nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que ambos elementos estén por encima de otros elementos 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para resaltar los elementos 
+}
+
+.fixed-nav {
+  top: 60px; /* Ajusta según la altura de tu encabezado para evitar que la barra de navegación se superponga al encabezado *
+  border-top: 30px;
+}
+
+.fixed-header header h1 {
+  margin-top: 20px; /* Aplicar un margen superior negativo al título 
+}
+*/
+p {
+  text-align: justify; /* Justificar el texto */
+  font-size: 18px;
+  line-height: 1.6; /* Ajusta este valor según el espaciado deseado entre líneas */
+  
+}
+
+h2 {
+  color: #2e64a1; /* Color del texto */
+  font-weight: 400; /* Grosor de la fuente */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; /* Define la fuente utilizada en el cuerpo del documento */
+  font-size: 16px; /* Tamaño de la fuente */
+  line-height: 20px; /* Altura de línea */
+}
+
+header {
+  background-color: rgb(255, 255, 255); /* Color de fondo del encabezado */
+  padding: 10px; /* Espaciado interno del encabezado */
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+header h1 {
+  color: rgb(0, 0, 0); /* Color del texto */
+  font-size: 45px; /* Tamaño de la fuente */
+  font-weight: 100px; /* Grosor de la fuente */
+  font-style: italic; /* Estilo de la fuente */
+  display: inline-block; /* Muestra el elemento como un bloque en línea */
+  position: relative; /* Define el posicionamiento relativo */
+  bottom: 35px; /* Posición vertical con respecto al contenedor padre */
+  margin-left: 10px; /* Margen izquierdo */
+}
+
+nav {
+  background-color: rgb(0, 0, 0); /* Color de fondo de la barra de navegación */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+nav ul li {
+  flex-grow: 0.1; /* Factor de crecimiento flexible */
+}
+
+nav ul li a {
+  color: white; /* Color del texto del enlace */
+  text-decoration: none; /* Decoración del texto del enlace */
+  padding: 3px 6px; /* Relleno del enlace */
+  display: block; /* Muestra el enlace como un bloque */
+   /* Alineación del texto */
+}
+
+.navbar {
+  background-color: #24456b;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centrar los elementos de navegación */
+}
+
+.navbar ul li {
+  margin: 0 20px; /* Espacio entre elementos de navegación */
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar ul li a.activo {
+  background-color: #0b121a;
+}
+
+footer .col {
+  display: flex; /* Display flexible para las columnas */
+  justify-content: space-between; /* Distribución del espacio entre elementos */
+  background-color: #000000;
+  align-items: center;
+  border-bottom: 2px solid #ffffff; /* Borde inferior blanco de 2 píxeles */
+}
+
+footer .contactos, 
+footer .info,
+footer .ayuda {
+  /*background-color: #000000; /* Color de fondo del pie de página */
+  clear: both; /* Borrar flotantes */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 5px 0; /* Relleno del pie de página */
+  margin-top: 20px; /* Margen superior */
+  font-style: italic;
+  width: 40%;
+}
+
+.h2 {
+  color: #ffffff; /* Color del texto */
+}
+
+.enlace-personalizado {
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  color: white; /* Establece el color del texto del enlace */
+}
+
+
+footer .col ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+footer .col ul li {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+footer .nombre {
+  /*background-color: #000000; /* Color de fondo del pie de página */
+  clear: both; /* Borrar flotantes */
+  color: #ffffff; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 5px 0; /* Relleno del pie de página */
+  margin-top: 20px; /* Margen superior */
+  font-style: italic;
+  text-align: center;
+  width: 55%; /* Ancho de la sección de bienvenida */
+  padding-right: 10px; /* Relleno derecho */
+  box-sizing: border-box; /* Modelo de caja */
+  display: flex; /* Activar flexbox */
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  font-size: 25px;
+}
+
+footer p {
+  background-color: #ffffff; /* Color de fondo del pie de página */
+  clear: both; /* Borrar flotantes */
+  color: #000000; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  padding: 2px 0; /* Relleno del pie de página */
+  /*margin-top: -15px;  /* Margen superior */
+  font-style: italic;
+}
+
+.contenido {
+  margin-top: 300px; /* Ajusta según la altura del encabezado */
+}
+
+nav ul li a.activo {
+  background-color: #4c76a5; /* Color de fondo del enlace activo */
+}
+
+.holder {
+  max-width: 90%; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Margen automático */
+}
+
+span {
+  color: burlywood;
+  font-style: none;
+}
+
+.titulo {
+  font-size: 70px;
+  font-style: bold;
+}
+
+/* Estilos de la sección de inicio */
+
+
+.columnas {
+  display: flex; /* Display flexible para las columnas */
+  justify-content: space-between; /* Distribución del espacio entre elementos */
+}
+
+.bienvenidos {
+  width: 75%; /* Ancho de la sección de bienvenida */
+  padding-right: 10px; /* Relleno derecho */
+  box-sizing: border-box; /* Modelo de caja */
+}
+
+.dias {
+  width: 25%; /* Ancho de la sección de testimonios */
+}
+
+.dias img{
+  width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+}
+
+.bienvenidos p {
+  font-size: 20px; /* Tamaño de la fuente del párrafo */
+}
+
+.inicio{
+  width: 95%; /* Establece el ancho de la imagen al 100% del contenedor */
+  height: 300px; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+  max-width: 100%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+  display: block; /* Asegura que la imagen sea tratada como un bloque */
+  margin-left: auto; /* Establece el margen izquierdo automático */
+  margin-right: auto; /* Establece el margen derecho automático */
+}
+
+/* Fin de estilos de la sección de inicio */
+
+/* Estilos de la sección Nosotros */
+
+.historia p {
+  font-size: 18px; /* Tamaño de la fuente del párrafo de la historia */
+}
+
+.persona {
+  border: 1px solid cornflowerblue; /* Borde del elemento */
+  border-radius: 5px; /* Radio de borde */
+  width: 18%; /* Ancho del elemento */
+  text-align: center; /* Alineación del texto */
+  padding: 13px; /* Relleno del elemento */
+  box-sizing: border-box; /* Modelo de caja */
+}
+
+.personas {
+  display: flex; /* Display flexible para las personas */
+  justify-content: space-between; /* Distribución del espacio entre elementos */
+  margin: 30px;
+}
+
+.persona img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Radio de borde para la imagen */
+  max-width: 60%; /* Ancho máximo de la imagen */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Sombra de la imagen */
+}
+
+.persona h5, .persona h6 {
+  margin: 0; /* Margen del elemento */
+  font-weight: normal; /* Grosor de la fuente */
+  color: purple; /* Color del texto */
+}
+
+.persona ul {
+  color: #666; /* Color del texto */
+  font-size:large; /* Tamaño de la fuente del párrafo */
+  text-align: start;
+  line-height: 1.6;
+}
+
+/* Fin de estilos de la sección Nosotros */
+
+/* Estilos de la sección Productos */
+
+.producto {
+  border: 1px solid #ccc; /* Borde del producto */
+  border-radius: 10px; /* Radio de borde */
+  padding: 16px; /* Relleno del producto */
+  margin: 16px 0; /* Margen del producto */
+  display: flex; /* Display flexible para alinear elementos */
+  gap: 32px; /* Espacio entre elementos */
+  align-items: center; /* Alineación de elementos */
+}
+
+.producto .info h4 {
+  color: #333; /* Color del título */
+  font-weight: 500; /* Grosor de la fuente */
+  font-style: italic; /* Estilo de la fuente */
+  border-bottom: 1px solid #2e64a1; /* Borde inferior */
+  padding-bottom: 10px; /* Relleno inferior */
+  font-size: 40px;
+}
+
+.producto img {
+  width: 300px;
+  border-radius: 15px; /* Establece un borde redondeado para la imagen */
+  display: block; /* Hace que la imagen se muestre como un bloque */
+  max-width: 225px; /* Limita el ancho máximo de la imagen a 225px para reducir su tamaño */
+}
+
+.producto:nth-child(even) {
+  flex-direction: row-reverse; /* Invierte la dirección de la disposición en fila de los producto alternos */
+}
+
+/* Fin de Productos */
+
+/* Inicio Galeria */
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.galeria img {
+  width: 18%;
+  border: 1px solid #ddd;
+  padding: 0.3em;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-right: 2%; 
+}
+
+/* Fin galeria */
+
+/* Inicio de Novedades */
+
+.novedades img {
+  display: block; /* Asegura que la imagen sea tratada como un bloque */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  max-width: 50%; /* Establece que la imagen ocupe el 50% del ancho del contenedor */
+  border: 3px solid #3b3535; /* Agrega un borde sólido */
+  padding: 0.3em; /* Agrega un relleno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+}
+
+.animacion {
+  animation-name: Aparecer;
+  animation-duration: 4s;
+}
+
+@keyframes Aparecer {
+  0% {
+      opacity: 0; /* La imagen está completamente transparente al inicio */
+  }
+  100% {
+      opacity: 1; /* La imagen es completamente visible al final */
+  }
+}
+
+.novedades p {
+  font-size: 20px;
+}
+
+/* Fin de Novedades */
+
+/* Inicio de Contacto */
+
+.contacto {
+  display: flex;
+  gap: 200px;
+  padding: 5px;
+}
+
+.contacto-container {
+  border: 2px solid #ccc; /* Borde sólido alrededor del contacto */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin-bottom: 10px;
+}
+
+.contacto div {
+  width: 100%; 
+}
+
+.datos ul li {
+  font-size: 22px;
+  margin-bottom: 20px;
+  line-height: 2.5;
+}
+
+.formulario p {
+  display: flex;
+}
+
+.formulario p label {
+  min-width: 80px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.formulario p input, .formulario p textarea {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: 1px solid #999;
+  font-size: 14px;
+}
+
+.formulario p:nth-child(4) {
+  align-items: start;
+}
+
+.formulario input[type="submit"] { /* Solo el hijo submit*/
+  background-color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 16px;
+  padding: 6px 20px;
+  width: auto;
+  position: relative;
+  left: 5rem;
+  cursor: pointer;
+}
+
+.fa-house {
+  margin-right: 5px; /* Agrega un margen a la derecha del icono */
+}
+
+textarea {
+  height: 90px;
+  resize: none;
+}
+
+
+.formulario {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #2e64a1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1e458b;
+}
+
+.datos {
+  width: 45%; /* Ancho del contenedor de datos de contacto */
+}
+
+.datos h2 {
+  color: #2e64a1;
+  font-size: 24px;
+}
+
+.datos ul {
+  padding-left: 20px;
+}
+
+.datos ul li {
+  margin-bottom: 10px;
+}
+
+.datos ul li i {
+  margin-right: 10px;
+  color: #2e64a1;
+}
+
+.datos h3 {
+  color: #2e64a1;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Fin de Contacto*/
