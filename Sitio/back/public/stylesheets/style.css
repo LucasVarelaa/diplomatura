@@ -10,6 +10,64 @@ font-family: 'Nosifer', sans-serif;
 font-family: 'Qwitcher Grypen', cursive;
 */
 
+
+.login-container {
+    background-color: #4098e0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 300px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-container h2 {
+  font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #163558;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    max-width: 380px;
+}
+
+button {
+    background-color: #2e64a1;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e458b;
+}
+
+
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
 h1 {
   top: -13px;
   font-family: 'Qwitcher Grypen', cursive;
@@ -51,6 +109,7 @@ body {
   font-family: 'Open Sans', sans-serif; /* Define la fuente utilizada en el cuerpo del documento */
   font-size: 16px; /* Tamaño de la fuente */
   line-height: 20px; /* Altura de línea */
+  background-color: rgb(27, 71, 138);
 }
 
 header {
