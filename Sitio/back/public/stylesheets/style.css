@@ -93,6 +93,34 @@ h1 {
   margin-top: 20px; /* Aplicar un margen superior negativo al título 
 }
 */
+
+.novedades {
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+.novedades .card {
+  border: 1px solid #ccc; /* Borde del producto */
+  border-radius: 10px; /* Radio de borde */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.novedades .card-body {
+  padding: 20px; /* Relleno del producto */
+}
+
+.novedades .card-title {
+  color: #333; /* Color del título */
+  font-weight: 500; /* Grosor de la fuente */
+  font-style: italic; /* Estilo de la fuente */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+.novedades .card-text {
+  font-size: 16px; /* Tamaño de la fuente */
+  line-height: 1.6; /* Altura de línea */
+  color: #666; /* Color del texto */
+}
+
 p {
   text-align: justify; /* Justificar el texto */
   font-size: 18px;
