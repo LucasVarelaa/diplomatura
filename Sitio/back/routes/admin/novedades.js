@@ -13,4 +13,33 @@ router.get('/', async function (req, res, next) {
   });
 });
 
+router.get('/agregar', (req, res, next) => {
+  res.render('admin/agregar', { // agregar.hbs
+    layout: 'admin/layout'
+  })
+});
+
+router.post('/agregar', async (req, res, next) => {
+  try {
+      if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo) {
+          await novedadesModel.insertNovedad(req.body);
+          res.redirect("/admin/novedades");
+      } else {
+          res.render('admin/agregar', {
+              layout: 'admin/layout',
+              error: true,
+              messages: 'Todos los campos son requeridos'
+          })
+      }
+  } catch (error) {
+      console.log(error);
+      res.render('admin/agregar', {
+          layout: 'admin/layout',
+          error: true,
+          messages: 'No se cargó la novedad'
+      })
+  }
+})
+
+
 module.exports = router
