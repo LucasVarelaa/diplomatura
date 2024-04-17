@@ -8,7 +8,7 @@ router.get('/', async function (req, res, next) {
 
   res.render('admin/novedades', {
     layout: 'admin/layout',
-    persona: req.session.nombre,
+    usuario: req.session.nombre,
     novedades
   });
 });
@@ -36,7 +36,7 @@ router.post('/agregar', async (req, res, next) => {
       res.render('admin/agregar', {
           layout: 'admin/layout',
           error: true,
-          messages: 'No se cargó la novedad'
+          messages: 'No se cargo la novedad'
       })
   }
 })
