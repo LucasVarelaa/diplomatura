@@ -4,7 +4,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title text-center mb-4"><strong style="color: #333;">Modificar la novedad</strong></h4>
-                    <form action="/admin/novedades/modificar" method="post">
+                    <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
                         <input type="hidden" value="{{novedad.id}}" name="id">
                         <div class="mb-3">
                             <label for="titulo" class="form-label">Título</label>
@@ -14,6 +14,17 @@
                             <label for="subtitulo" class="form-label">Subtítulo</label>
                             <input class="form-control" id="subtitulo" placeholder="Ingrese el subtítulo" name="subtitulo" value="{{novedad.subtitulo}}">
                         </div>
+
+                        <div class="mb-3">
+                            <p>
+                                <label>Imagen <input type="file" class="form-control" name="imagen" id="imagen"></label>
+                            </p>
+                            <p>
+                                <label style="font-size: 14px;"><input type="checkbox" name="img_delete" id="img_delete" value="1"> Eliminar imagen actual?</label>
+                                <input type="hidden" name="img_original" value="{{novedad.img_id}}">
+                            </p>
+                        </div>
+
                         <div class="mb-3">
                             <label for="cuerpo" class="form-label">Cuerpo</label>
                             <textarea class="form-control" id="cuerpo" placeholder="Ingrese el cuerpo" name="cuerpo">{{novedad.cuerpo}}</textarea>
