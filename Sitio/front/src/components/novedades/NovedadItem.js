@@ -7,8 +7,9 @@ const NovedadItem = (props) => {
         <div className="novedades">
             <h1>{title}</h1>
             <h2>{subtitle}</h2>
-            <img dangerouslySetInnerHTML={{ __html: body }} />
-            <hr/>
+            {imagen && <img src={imagen} alt="Imagen de novedad"/>} 
+            <div dangerouslySetInnerHTML={{ __html: body }} />
+            <hr />
         </div>
     );
 }

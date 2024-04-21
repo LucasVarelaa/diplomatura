@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from 'axios';
-import NovedadeItem from '../components/novedades/NovedadItem';
+import NovedadItem from '../components/novedades/NovedadItem';
 
 const NovedadesPage = (props) => {
 
@@ -26,9 +26,9 @@ const NovedadesPage = (props) => {
                 loading ? (
                     <p>Cargando...</p>
                 ) : (
-                    novedades.map(item => <NovedadeItem key={item.id}
-                    title={item.titulo} subtitle={item.subtitulo}
-                    imagen={item.imagen} body={item.cuerpo} />)
+                    novedades.map(item => <NovedadItem key={item.id}
+                        title={item.titulo} subtitle={item.subtitulo}
+                        imagen={item.imagen} body={item.cuerpo} />)
                 )
             }
         </section>
