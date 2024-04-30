@@ -1,0 +1,10 @@
+.novedades h1 {
+    font-size: 2rem; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 10px; /* Margen inferior */
+    font-family: "Arial", sans-serif; /* Reemplaza con el tipo de letra deseado */
+  }
+.novedades {
+    line-height: 1.6; /* Ajusta este valor según tu preferencia */
+  }
